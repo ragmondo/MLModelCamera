@@ -1,0 +1,130 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateStaticText(
+  $filter: ModelSubscriptionStaticTextFilterInput
+) {
+  onCreateStaticText(filter: $filter) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateStaticText(
+  $filter: ModelSubscriptionStaticTextFilterInput
+) {
+  onUpdateStaticText(filter: $filter) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteStaticText(
+  $filter: ModelSubscriptionStaticTextFilterInput
+) {
+  onDeleteStaticText(filter: $filter) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateRunAcceptance(
+  $filter: ModelSubscriptionRunAcceptanceFilterInput
+) {
+  onCreateRunAcceptance(filter: $filter) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateRunAcceptance(
+  $filter: ModelSubscriptionRunAcceptanceFilterInput
+) {
+  onUpdateRunAcceptance(filter: $filter) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteRunAcceptance(
+  $filter: ModelSubscriptionRunAcceptanceFilterInput
+) {
+  onDeleteRunAcceptance(filter: $filter) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateMedals($filter: ModelSubscriptionMedalsFilterInput) {
+  onCreateMedals(filter: $filter) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateMedals($filter: ModelSubscriptionMedalsFilterInput) {
+  onUpdateMedals(filter: $filter) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteMedals($filter: ModelSubscriptionMedalsFilterInput) {
+  onDeleteMedals(filter: $filter) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

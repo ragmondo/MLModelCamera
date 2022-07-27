@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mlmodelcamera-dev-174057-authRole",
+      "UnauthRoleArn": "arn:aws:iam::271477348327:role/amplify-mlmodelcamera-dev-174057-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::271477348327:role/amplify-mlmodelcamera-dev-174057-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mlmodelcamera-dev-174057-deployment",
+      "UnauthRoleName": "amplify-mlmodelcamera-dev-174057-unauthRole",
+      "StackName": "amplify-mlmodelcamera-dev-174057",
+      "StackId": "arn:aws:cloudformation:us-east-1:271477348327:stack/amplify-mlmodelcamera-dev-174057/e62b36a0-0dca-11ed-a661-12d99ed4ea3f",
+      "AmplifyAppId": "d3lps3492eidy7"
+    }
+  }
+}

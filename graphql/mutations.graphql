@@ -1,0 +1,145 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateStaticText(
+  $input: CreateStaticTextInput!
+  $condition: ModelStaticTextConditionInput
+) {
+  createStaticText(input: $input, condition: $condition) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateStaticText(
+  $input: UpdateStaticTextInput!
+  $condition: ModelStaticTextConditionInput
+) {
+  updateStaticText(input: $input, condition: $condition) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteStaticText(
+  $input: DeleteStaticTextInput!
+  $condition: ModelStaticTextConditionInput
+) {
+  deleteStaticText(input: $input, condition: $condition) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateRunAcceptance(
+  $input: CreateRunAcceptanceInput!
+  $condition: ModelRunAcceptanceConditionInput
+) {
+  createRunAcceptance(input: $input, condition: $condition) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateRunAcceptance(
+  $input: UpdateRunAcceptanceInput!
+  $condition: ModelRunAcceptanceConditionInput
+) {
+  updateRunAcceptance(input: $input, condition: $condition) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteRunAcceptance(
+  $input: DeleteRunAcceptanceInput!
+  $condition: ModelRunAcceptanceConditionInput
+) {
+  deleteRunAcceptance(input: $input, condition: $condition) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateMedals(
+  $input: CreateMedalsInput!
+  $condition: ModelMedalsConditionInput
+) {
+  createMedals(input: $input, condition: $condition) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateMedals(
+  $input: UpdateMedalsInput!
+  $condition: ModelMedalsConditionInput
+) {
+  updateMedals(input: $input, condition: $condition) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteMedals(
+  $input: DeleteMedalsInput!
+  $condition: ModelMedalsConditionInput
+) {
+  deleteMedals(input: $input, condition: $condition) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

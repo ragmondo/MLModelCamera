@@ -1,0 +1,184 @@
+# this is an auto generated file. This will be overwritten
+query GetStaticText($id: ID!) {
+  getStaticText(id: $id) {
+    id
+    menu_name
+    tex
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListStaticTexts(
+  $filter: ModelStaticTextFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listStaticTexts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      menu_name
+      tex
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncStaticTexts(
+  $filter: ModelStaticTextFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncStaticTexts(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      menu_name
+      tex
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetRunAcceptance($id: ID!) {
+  getRunAcceptance(id: $id) {
+    id
+    long_name
+    mandatory
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListRunAcceptances(
+  $filter: ModelRunAcceptanceFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listRunAcceptances(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      long_name
+      mandatory
+      description
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncRunAcceptances(
+  $filter: ModelRunAcceptanceFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncRunAcceptances(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      long_name
+      mandatory
+      description
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetMedals($id: ID!) {
+  getMedals(id: $id) {
+    id
+    label
+    long_name
+    image_url
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListMedals(
+  $filter: ModelMedalsFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMedals(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      label
+      long_name
+      image_url
+      description
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncMedals(
+  $filter: ModelMedalsFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncMedals(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      label
+      long_name
+      image_url
+      description
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
