@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,10 +20,16 @@
 		8A413BA820D221D500A761EC /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A413BA520D221D500A761EC /* AVCaptureDevice+Extension.swift */; };
 		8A8DE5C920D6DEA200914B67 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DE5C820D6DEA200914B67 /* models */; };
 		8AEC912C24273FD70014E67B /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC912B24273FD70014E67B /* BoundingBoxView.swift */; };
+		9B526C4B2891A55100FAA160 /* graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9B526C482891A55100FAA160 /* graphql */; };
+		9B526C4C2891A55100FAA160 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B526C492891A55100FAA160 /* API.swift */; };
+		9B526C4D2891A55100FAA160 /* amplify in Resources */ = {isa = PBXBuildFile; fileRef = 9B526C4A2891A55100FAA160 /* amplify */; };
+		9B526C602891AA0A00FAA160 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 9B526C5F2891AA0A00FAA160 /* AWSAPIPlugin */; };
+		9B526C622891AA0A00FAA160 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B526C612891AA0A00FAA160 /* AWSPluginsCore */; };
+		9B526C642891AA0A00FAA160 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 9B526C632891AA0A00FAA160 /* Amplify */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		767E5DB19ABAFA822AD47A3F /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		767E5DB19ABAFA822AD47A3F /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		8A243AE920D99188005947D6 /* ModelDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDescriptionViewController.swift; sourceTree = "<group>"; };
 		8A413B8D20D2205F00A761EC /* MLModelCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLModelCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A413B9020D2205F00A761EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +43,10 @@
 		8A413BA520D221D500A761EC /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
 		8A8DE5C820D6DEA200914B67 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		8AEC912B24273FD70014E67B /* BoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
-		EF5D92D9373BAC44B41999D7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		9B526C482891A55100FAA160 /* graphql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphql; sourceTree = "<group>"; };
+		9B526C492891A55100FAA160 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9B526C4A2891A55100FAA160 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amplify; sourceTree = "<group>"; };
+		EF5D92D9373BAC44B41999D7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B526C642891AA0A00FAA160 /* Amplify in Frameworks */,
+				9B526C622891AA0A00FAA160 /* AWSPluginsCore in Frameworks */,
+				9B526C602891AA0A00FAA160 /* AWSAPIPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,9 @@
 		8A413B8420D2205F00A761EC = {
 			isa = PBXGroup;
 			children = (
+				9B526C4A2891A55100FAA160 /* amplify */,
+				9B526C492891A55100FAA160 /* API.swift */,
+				9B526C482891A55100FAA160 /* graphql */,
 				8A8DE5C820D6DEA200914B67 /* models */,
 				8A413BA220D221D500A761EC /* VideoCapture */,
 				8A413B8F20D2205F00A761EC /* MLModelCamera */,
@@ -120,6 +135,11 @@
 			dependencies = (
 			);
 			name = MLModelCamera;
+			packageProductDependencies = (
+				9B526C5F2891AA0A00FAA160 /* AWSAPIPlugin */,
+				9B526C612891AA0A00FAA160 /* AWSPluginsCore */,
+				9B526C632891AA0A00FAA160 /* Amplify */,
+			);
 			productName = MLModelCamera;
 			productReference = 8A413B8D20D2205F00A761EC /* MLModelCamera.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 8A413B8420D2205F00A761EC;
+			packageReferences = (
+				9B526C5E2891AA0A00FAA160 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
 			productRefGroup = 8A413B8E20D2205F00A761EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,9 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A413B9B20D2206100A761EC /* LaunchScreen.storyboard in Resources */,
+				9B526C4D2891A55100FAA160 /* amplify in Resources */,
 				8A413B9820D2206100A761EC /* Assets.xcassets in Resources */,
 				8A8DE5C920D6DEA200914B67 /* models in Resources */,
 				8A413B9620D2205F00A761EC /* Main.storyboard in Resources */,
+				9B526C4B2891A55100FAA160 /* graphql in Resources */,
 				20316DE715E72EA7EC81DACC /* awsconfiguration.json in Resources */,
 				0868308775C957FCF4487453 /* amplifyconfiguration.json in Resources */,
 			);
@@ -185,6 +210,7 @@
 				8A413B9120D2205F00A761EC /* AppDelegate.swift in Sources */,
 				8A413BA820D221D500A761EC /* AVCaptureDevice+Extension.swift in Sources */,
 				8A413BA620D221D500A761EC /* VideoCameraType.swift in Sources */,
+				9B526C4C2891A55100FAA160 /* API.swift in Sources */,
 				8A243AEA20D99188005947D6 /* ModelDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +413,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B526C5E2891AA0A00FAA160 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B526C5F2891AA0A00FAA160 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B526C5E2891AA0A00FAA160 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		9B526C612891AA0A00FAA160 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B526C5E2891AA0A00FAA160 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSPluginsCore;
+		};
+		9B526C632891AA0A00FAA160 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B526C5E2891AA0A00FAA160 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A413B8520D2205F00A761EC /* Project object */;
 }

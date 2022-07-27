@@ -1,7 +1,10 @@
 //  This file was automatically generated and should not be edited.
 
-import AWSAppSync
+// import AWSAppSync
+//import Amplify
+//import AppSyncRealTimeClient
 
+/*
 public struct CreateStaticTextInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -6353,3 +6356,5 @@ public final class OnDeleteMedalsSubscription: GraphQLSubscription {
     }
   }
 }
+
+*/
