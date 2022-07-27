@@ -1,0 +1,22 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://rthaepvgbbagrbra5o4ydwvczq.appsync-api.us-east-1.amazonaws.com/graphql",
+            "Region": "us-east-1",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-blkdfxyslbgqpemznyvkblfgte",
+            "ClientDatabasePrefix": "medaldetector-staging_API_KEY"
+        },
+        "medaldetector-staging_AWS_IAM": {
+            "ApiUrl": "https://rthaepvgbbagrbra5o4ydwvczq.appsync-api.us-east-1.amazonaws.com/graphql",
+            "Region": "us-east-1",
+            "AuthMode": "AWS_IAM",
+            "ClientDatabasePrefix": "medaldetector-staging_AWS_IAM"
+        }
+    }
+}
