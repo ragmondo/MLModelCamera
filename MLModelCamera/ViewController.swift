@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+//import Logger
 
 class ViewController: UIViewController {
 
@@ -57,11 +58,17 @@ class ViewController: UIViewController {
         modelUrls = []
         for modelPath in modelPaths {
             let url = URL(fileURLWithPath: modelPath)
+            NSLog("Attempting to compile model \(url)")
             let compiledUrl = try! MLModel.compileModel(at: url)
             modelUrls.append(compiledUrl)
+            NSLog("Compiled model \(url)")
         }
-        
-        selectModel(url: modelUrls.first!)
+
+        NSLog("\(modelUrls.count) models found.")
+
+        if ( modelUrls.count > 0) {
+            selectModel(url: modelUrls.first!)
+        }
         
         // scaleFill
         cropAndScaleOptionSelector.selectedSegmentIndex = 2
