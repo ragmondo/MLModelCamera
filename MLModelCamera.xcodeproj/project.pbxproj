@@ -20,6 +20,8 @@
 		8A413BA820D221D500A761EC /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A413BA520D221D500A761EC /* AVCaptureDevice+Extension.swift */; };
 		8A8DE5C920D6DEA200914B67 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 8A8DE5C820D6DEA200914B67 /* models */; };
 		8AEC912C24273FD70014E67B /* BoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC912B24273FD70014E67B /* BoundingBoxView.swift */; };
+		9B2B7B3928997C7A00B3F41E /* HistoricalScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B7B3828997C7A00B3F41E /* HistoricalScan.swift */; };
+		9B2B7B3B28997EC500B3F41E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B7B3A28997EC500B3F41E /* ScanView.swift */; };
 		9B526C4B2891A55100FAA160 /* graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9B526C482891A55100FAA160 /* graphql */; };
 		9B526C4C2891A55100FAA160 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B526C492891A55100FAA160 /* API.swift */; };
 		9B526C4D2891A55100FAA160 /* amplify in Resources */ = {isa = PBXBuildFile; fileRef = 9B526C4A2891A55100FAA160 /* amplify */; };
@@ -43,6 +45,9 @@
 		8A413BA520D221D500A761EC /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
 		8A8DE5C820D6DEA200914B67 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		8AEC912B24273FD70014E67B /* BoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBoxView.swift; sourceTree = "<group>"; };
+		9B2B7B3828997C7A00B3F41E /* HistoricalScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalScan.swift; sourceTree = "<group>"; };
+		9B2B7B3A28997EC500B3F41E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		9B2B7B3C289C8C4300B3F41E /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		9B526C482891A55100FAA160 /* graphql */ = {isa = PBXFileReference; lastKnownFileType = folder; path = graphql; sourceTree = "<group>"; };
 		9B526C492891A55100FAA160 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9B526C4A2891A55100FAA160 /* amplify */ = {isa = PBXFileReference; lastKnownFileType = folder; path = amplify; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 		8A413B8420D2205F00A761EC = {
 			isa = PBXGroup;
 			children = (
+				9B2B7B3C289C8C4300B3F41E /* TestPlan.xctestplan */,
+				9B2B7B3A28997EC500B3F41E /* ScanView.swift */,
+				9B2B7B3728997C3600B3F41E /* DataModels */,
 				9B526C4A2891A55100FAA160 /* amplify */,
 				9B526C492891A55100FAA160 /* API.swift */,
 				9B526C482891A55100FAA160 /* graphql */,
@@ -119,6 +127,14 @@
 			path = VideoCapture;
 			sourceTree = "<group>";
 		};
+		9B2B7B3728997C3600B3F41E /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				9B2B7B3828997C7A00B3F41E /* HistoricalScan.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +166,9 @@
 		8A413B8520D2205F00A761EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Richard Green";
@@ -211,6 +230,8 @@
 				8A413BA820D221D500A761EC /* AVCaptureDevice+Extension.swift in Sources */,
 				8A413BA620D221D500A761EC /* VideoCameraType.swift in Sources */,
 				9B526C4C2891A55100FAA160 /* API.swift in Sources */,
+				9B2B7B3B28997EC500B3F41E /* ScanView.swift in Sources */,
+				9B2B7B3928997C7A00B3F41E /* HistoricalScan.swift in Sources */,
 				8A243AEA20D99188005947D6 /* ModelDescriptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +382,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 2S93JEP63Z;
 				INFOPLIST_FILE = MLModelCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +403,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = 2S93JEP63Z;
 				INFOPLIST_FILE = MLModelCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
