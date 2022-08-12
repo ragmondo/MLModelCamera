@@ -31,30 +31,33 @@ class VideoCapture: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, AVCa
         
         videoDevice = cameraType.captureDevice()
 
-        // setup video format
-        do {
-            captureSession.sessionPreset = AVCaptureSession.Preset.inputPriority
-            if let preferredSpec = preferredSpec {
-                // update the format with a preferred fps
-                videoDevice.updateFormatWithPreferredVideoSpec(preferredSpec: preferredSpec)
-            }
-        }
+        if (videoDevice != nil) {
         
-        // setup video device input
-        do {
-            let videoDeviceInput: AVCaptureDeviceInput
+            // setup video format
             do {
-                videoDeviceInput = try AVCaptureDeviceInput(device: videoDevice)
+                captureSession.sessionPreset = AVCaptureSession.Preset.inputPriority
+                if let preferredSpec = preferredSpec {
+                    // update the format with a preferred fps
+                    videoDevice.updateFormatWithPreferredVideoSpec(preferredSpec: preferredSpec)
+                }
             }
-            catch {
-                fatalError("Could not create AVCaptureDeviceInput instance with error: \(error).")
+            
+            // setup video device input
+            do {
+                let videoDeviceInput: AVCaptureDeviceInput
+                do {
+                    videoDeviceInput = try AVCaptureDeviceInput(device: videoDevice)
+                }
+                catch {
+                    fatalError("Could not create AVCaptureDeviceInput instance with error: \(error).")
+                }
+                guard captureSession.canAddInput(videoDeviceInput) else {
+                    fatalError()
+                }
+                captureSession.addInput(videoDeviceInput)
             }
-            guard captureSession.canAddInput(videoDeviceInput) else {
-                fatalError()
-            }
-            captureSession.addInput(videoDeviceInput)
+                
         }
-        
         // setup preview
         if let previewContainer = previewContainer {
             let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
